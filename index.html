@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendora | Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-message">WELCOME TO TRENDORA &nbsp; | &nbsp; GET EXTRA 10% OFF ON YOUR FIRST ORDER</div>
+
+  <header class="header">
+    <a class="logo" href="#home">TREND<span>ORA</span></a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">HOME</a>
+      <a href="#collections">COLLECTIONS</a>
+      <a href="#products">SHOP</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <div class="header-actions">
+      <input type="text" id="searchInput" placeholder="Search fashion...">
+      <button id="wishlistButton" class="icon-button" title="Wishlist">♡<span id="wishlistCount">0</span></button>
+      <button id="cartButton" class="icon-button" title="Cart">🛒<span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1800&q=85" alt="Fashion model in modern clothes">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-text">
+        <p>URBAN STYLE 2026</p>
+        <h1>MAKE EVERY<br>LOOK COUNT.</h1>
+        <span>COLLEGE STYLE FEST — UP TO 55% OFF</span>
+        <a href="#products">EXPLORE NOW →</a>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><b>🚚 FREE SHIPPING</b><span>Above ₹799</span></div>
+      <div><b>↺ EASY RETURNS</b><span>Within 7 days</span></div>
+      <div><b>✦ NEW ARRIVALS</b><span>Fresh drops weekly</span></div>
+    </section>
+
+    <section class="section" id="collections">
+      <p class="section-label">SHOP YOUR MOOD</p>
+      <h2 class="section-title">EXPLORE COLLECTIONS</h2>
+
+      <div class="collection-grid">
+        <button class="collection-card" data-category="men">
+          <img src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=700&q=80" alt="Men's collection">
+          <span>MEN'S EDIT</span>
+        </button>
+
+        <button class="collection-card" data-category="women">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="Women's collection">
+          <span>WOMEN'S EDIT</span>
+        </button>
+
+        <button class="collection-card" data-category="shoes">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80" alt="Shoe collection">
+          <span>SHOE STUDIO</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section product-section" id="products">
+      <div class="shop-top">
+        <div>
+          <p class="section-label">HANDPICKED FOR YOU</p>
+          <h2 class="section-title left">POPULAR RIGHT NOW</h2>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="men">Men</button>
+          <button class="filter" data-filter="women">Women</button>
+          <button class="filter" data-filter="shoes">Shoes</button>
+        </div>
+      </div>
+
+      <p id="resultText" class="result-text"></p>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="men" data-name="olive oversized t shirt men">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80" alt="Olive t-shirt">
+            <button class="heart">♡</button>
+            <span>BESTSELLER</span>
+          </div>
+          <div class="product-details">
+            <h3>North Edge</h3>
+            <p>Olive Oversized T-Shirt</p>
+            <strong>₹649</strong> <del>₹1,299</del> <em>50% OFF</em>
+            <button class="cart-add">ADD TO CART</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="women" data-name="lavender co ord set women">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=600&q=80" alt="Lavender outfit">
+            <button class="heart">♡</button>
+            <span>NEW</span>
+          </div>
+          <div class="product-details">
+            <h3>Lavish Lane</h3>
+            <p>Lavender Co-ord Set</p>
+            <strong>₹1,499</strong> <del>₹2,499</del> <em>40% OFF</em>
+            <button class="cart-add">ADD TO CART</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="shoes" data-name="white chunky sneakers shoes">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=600&q=80" alt="White sneakers">
+            <button class="heart">♡</button>
+            <span>TRENDING</span>
+          </div>
+          <div class="product-details">
+            <h3>Street Sole</h3>
+            <p>White Chunky Sneakers</p>
+            <strong>₹1,899</strong> <del>₹3,199</del> <em>41% OFF</em>
+            <button class="cart-add">ADD TO CART</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="men" data-name="beige cargo trousers men">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80" alt="Beige cargo pants">
+            <button class="heart">♡</button>
+          </div>
+          <div class="product-details">
+            <h3>North Edge</h3>
+            <p>Beige Cargo Trousers</p>
+            <strong>₹1,099</strong> <del>₹1,899</del> <em>42% OFF</em>
+            <button class="cart-add">ADD TO CART</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="women" data-name="floral midi dress women">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80" alt="Floral midi dress">
+            <button class="heart">♡</button>
+          </div>
+          <div class="product-details">
+            <h3>Lavish Lane</h3>
+            <p>Floral Midi Dress</p>
+            <strong>₹1,199</strong> <del>₹2,299</del> <em>48% OFF</em>
+            <button class="cart-add">ADD TO CART</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="shoes" data-name="black running shoes">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=600&q=80" alt="Black running shoes">
+            <button class="heart">♡</button>
+          </div>
+          <div class="product-details">
+            <h3>Street Sole</h3>
+            <p>Black Running Shoes</p>
+            <strong>₹1,599</strong> <del>₹2,899</del> <em>45% OFF</em>
+            <button class="cart-add">ADD TO CART</button>
+          </div>
+        </article>
+      </div>
+
+      <p id="noProducts" class="no-products">Sorry, no matching products were found.</p>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div>
+        <p class="section-label">TRENDORA CLUB</p>
+        <h2>GET STYLE UPDATES<br>BEFORE EVERYONE ELSE.</h2>
+      </div>
+
+      <form id="newsletterForm">
+        <input type="email" id="emailInput" placeholder="Enter your email address" required>
+        <button type="submit">SUBSCRIBE →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a class="footer-logo" href="#home">TREND<span>ORA</span></a>
+      <p>Fashion for your everyday confidence.</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>SHOP</h3>
+        <a href="#products">New arrivals</a>
+        <a href="#products">Men</a>
+        <a href="#products">Women</a>
+      </div>
+      <div>
+        <h3>PROJECT</h3>
+        <a href="#home">Frontend only</a>
+        <a href="#contact">Contact</a>
+        <a href="#collections">Collections</a>
+      </div>
+    </div>
+
+    <p class="footer-bottom">© <span id="year"></span> Trendora Fashion Store | Student Frontend Project</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
